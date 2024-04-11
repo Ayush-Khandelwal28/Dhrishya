@@ -76,6 +76,20 @@
     }
   }
 
+  /* For Clerk */
+
+  .cl-internal-1ui5z3q{
+    color: white
+  }
+
+  .cl-internal-oy1wof{
+    filter: invert(1)
+  }
+
+  .cl-internal-uyu30o{
+    filter: invert(1)
+  }
+
   @layer base {
     * {
       @apply border-border;
