@@ -3,7 +3,7 @@ import { authMiddleware } from "@clerk/nextjs";
 const protectedRoutes = (["/", "/previous", "/upcoming", "/recordings", "/personalRoom", "/meeting(.*)"]);
 
 export default authMiddleware({
-    publicRoutes: ["/"]
+    // publicRoutes: ["/"]
 });
 
 export const config = {
