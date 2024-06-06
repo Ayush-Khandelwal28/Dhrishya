@@ -2,6 +2,7 @@
 import MeetingTypeList from '@/components/ui/MeetingTypeList';
 import React from 'react';
 import { useEffect, useState } from 'react'
+import { StreamVideoProvider } from '@/providers/StreamClientProvider';
 
 
 const Home = () => {
@@ -28,8 +29,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-    <MeetingTypeList/>
+      <StreamVideoProvider>
+        <MeetingTypeList />
+      </StreamVideoProvider>
 
     </section>
 

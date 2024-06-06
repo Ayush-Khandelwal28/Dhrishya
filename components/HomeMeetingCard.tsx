@@ -8,7 +8,7 @@ const HomeMeetingCard = () => {
     return (
         HomeCardDetails.map((card) => (
             <div className={`bg-${card.color} px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer`}
-                onClick={() => router.push(`/${card.onclick}`)}
+                // onClick={() => router.push(`/${card.onclick}`)}
             >
                 <div className='flex-center glassmorphism size-12 rounded-[10px] cursor-pointer'>
                     <Image
