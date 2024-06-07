@@ -3,10 +3,8 @@ import { tokenProvider } from '@/actions/stream.actions';
 import Loader from '@/components/Loader';
 import { useUser } from '@clerk/nextjs';
 import {
-  StreamCall,
   StreamVideo,
   StreamVideoClient,
-  User,
 } from '@stream-io/video-react-sdk';
 import { ReactNode, useEffect } from 'react';
 import { useState } from 'react';
@@ -35,6 +33,7 @@ export const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
       tokenProvider
     });
     setVideoClient(client);
+    console.log("Client in Provider", client)
   }, [user, isLoaded]);
 
   if (!videoClient) return <Loader />;

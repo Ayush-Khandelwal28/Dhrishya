@@ -6,7 +6,7 @@ import { StreamClient } from '@stream-io/node-sdk';
 const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 const secret = process.env.NEXT_PUBLIC_STREAM_API_SECRET;
 
-export const tokenProvider = async (userId: string) => {
+export const tokenProvider = async () => {
     const user = await currentUser();
 
     if (!user) throw new Error("User not found");
