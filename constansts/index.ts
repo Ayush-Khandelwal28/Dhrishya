@@ -28,14 +28,6 @@ export const SidebarLinks = [
 
 export const HomeCardDetails = [
     {
-        imgSrc: '/icons/add-meeting.svg',
-        imgAlt:'Add Meetings',
-        title: 'New Meeting',
-        description: 'Start an Instant Meeting',
-        color: 'orange-1',
-        onclick: 'upcoming'
-    },
-    {
         imgSrc: '/icons/join-meeting.svg',
         imgAlt:'Join-Meeting',
         title: 'Join Meeting',
