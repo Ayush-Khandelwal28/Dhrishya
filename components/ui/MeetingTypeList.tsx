@@ -130,7 +130,6 @@ const MeetingTypeList = () => {
                             dateFormat="MMMM d, yyyy h:mm aa"
                             className="w-full rounded bg-dark-3 p-2 focus:outline-none text-black"
                         />
-                        <ReactDatePicker selected={values.dateTime} onChange={(date) => setValues({ ...values, dateTime: date! })} />
                     </div>
                 </MeetingModal>
             ) : (
